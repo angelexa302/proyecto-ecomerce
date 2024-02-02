@@ -1,0 +1,53 @@
+main {
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+
+    .titulo-principal {
+        color: violet;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .producto-imagen {
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+
+    .producto-detalles {
+        background-color: violet;
+        color: white;
+        padding: .5rem;
+        border-radius: 1rem;
+        margin-top: -2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: .25rem
+    }
+    .producto-titulo {
+        font-size: 1rem;
+    }
+    .producto-agregar {
+        border: 0;
+        background-color: white;
+        border-radius: 2rem;
+        color: violet;
+        padding: .4rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: 2px solid white;
+        transition: background-color 1s, color .6s;
+        &:hover  {
+            color:white;
+            background-color: violet;
+        }
+    }
+}
